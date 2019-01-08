@@ -63,7 +63,7 @@ public class Detektiv extends Actor
                     turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
                 }
             }, 
-                1000 
+                100 
                 );
     }
     
