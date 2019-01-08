@@ -33,19 +33,7 @@ public class Detektiv extends Actor
     {
        if (Greenfoot.isKeyDown("d"))
        {
-         setLocation(getX()+1, getY());
-         Actor Agu = getOneObjectAtOffset(1, 0, wand.class) ;
-         if ( Agu != null)
-         {
-             
-            }
-         else
-         
-         {
-             setRotation(180);
-             move(10);
-             setRotation(0);
-       }  
+         setLocation(getX()+1, getY());  
     }
     }
     public void obenGehen()
