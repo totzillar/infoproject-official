@@ -26,16 +26,32 @@ public class Detektiv extends Actor
        if (Greenfoot.isKeyDown("a"))
        {
          setLocation(getX()-1, getY());
-         
+           
+         if (isTouching(wand.class))
+             {
+                 
+                 setLocation(getX()+1, getY());
+     
+         }
        }  
     }
      public void rechtsGehen()
     {
      if (Greenfoot.isKeyDown("d"))
-       {
-         setLocation(getX()+1, getY());
-         
-       }  
+    {
+     setLocation(getX()+1, getY());
+     
+     
+     if (isTouching(wand.class))
+     {
+      
+      setLocation(getX()-1, getY());
+     
+     }
+        
+        
+     
+    }
     }
     public void obenGehen()
     {
@@ -43,7 +59,13 @@ public class Detektiv extends Actor
        {
          setLocation(getX(), getY()-1);
         
-       }  
+         if (isTouching(wand.class))
+        {
+         
+         setLocation(getX(), getY()+1);
+     
+       }
+        }  
     }
     public void untenGehen()
     {
@@ -51,6 +73,12 @@ public class Detektiv extends Actor
        {
          setLocation(getX(), getY()+1);
          
+         if (isTouching(wand.class))
+         {
+             
+             setLocation(getX(), getY()-1);
+     
+          }
        }  
     }
    
