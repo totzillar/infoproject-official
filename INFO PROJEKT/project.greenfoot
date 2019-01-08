@@ -3,7 +3,11 @@ class.Detektiv.image=ball.png
 class.Detektiv.superclass=greenfoot.Actor
 class.Holz.image=corkboard.jpg
 class.Holz.superclass=greenfoot.World
+<<<<<<< HEAD
 class.wand.image=strich\ perfekt\ vielleicht.png
+=======
+class.wand.image=strich.png
+>>>>>>> justin-detektive
 class.wand.superclass=greenfoot.Actor
 dependency1.from=Holz
 dependency1.to=wand
@@ -11,18 +15,34 @@ dependency1.type=UsesDependency
 dependency2.from=Detektiv
 dependency2.to=wand
 dependency2.type=UsesDependency
+<<<<<<< HEAD
 mainWindow.height=1170
 mainWindow.width=1936
 mainWindow.x=17
 mainWindow.y=0
 package.numDependencies=2
+=======
+dependency3.from=Holz
+dependency3.to=Detektiv
+dependency3.type=UsesDependency
+mainWindow.height=1170
+mainWindow.width=1936
+mainWindow.x=-8
+mainWindow.y=0
+package.numDependencies=3
+>>>>>>> justin-detektive
 package.numTargets=3
 project.charset=UTF-8
 simulation.speed=57
 target1.editor.height=700
 target1.editor.width=900
+<<<<<<< HEAD
 target1.editor.x=25
 target1.editor.y=18
+=======
+target1.editor.x=10
+target1.editor.y=56
+>>>>>>> justin-detektive
 target1.height=50
 target1.name=Detektiv
 target1.naviview.expanded=true
@@ -34,8 +54,13 @@ target1.x=160
 target1.y=10
 target2.editor.height=427
 target2.editor.width=900
+<<<<<<< HEAD
 target2.editor.x=358
 target2.editor.y=40
+=======
+target2.editor.x=963
+target2.editor.y=646
+>>>>>>> justin-detektive
 target2.height=50
 target2.name=Holz
 target2.naviview.expanded=true
