@@ -55,7 +55,16 @@ public class Detektiv extends Actor
    
     public void rotation()
     {
-        turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
+            new java.util.Timer().schedule( 
+            new java.util.TimerTask() 
+            {
+                @Override
+                public void run() {
+                    turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
+                }
+            }, 
+                1000 
+                );
     }
     
     }
