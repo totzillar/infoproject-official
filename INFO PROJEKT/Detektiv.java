@@ -19,7 +19,6 @@ public class Detektiv extends Actor
         obenGehen();
         untenGehen();
         rotation();
-        
     
     }    
     public void linksGehen()
