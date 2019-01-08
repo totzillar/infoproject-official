@@ -18,6 +18,7 @@ public class Detektiv extends Actor
         rechtsGehen();
         obenGehen();
         untenGehen();
+        rotation();
         
     
     }    
@@ -53,4 +54,9 @@ public class Detektiv extends Actor
        }  
     }
    
+    public void rotation()
+    {
+        turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
+    }
+    
     }
