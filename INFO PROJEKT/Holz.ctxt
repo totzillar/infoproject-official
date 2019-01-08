@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Holz()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Holz.\r\n\ \r\n
+comment1.params=
+comment1.target=void\ prepare()
+comment1.text=\r\n\ Bereite\ die\ Welt\ f\u00FCr\ den\ Programmstart\ vor.\ Das\ hei\u00DFt\:\ Erzeuge\ die\ Anfangs-\r\n\ Objekte\ und\ f\u00FCge\ sie\ der\ Welt\ hinzu.\r\n
+numComments=2
