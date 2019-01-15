@@ -4,7 +4,7 @@ BABY DETECTIVE
 Das Spiel!
 out now
 
-Ein professionell gemachten Spiel
+Ein professionell gemachtes Spiel
 von
 
 Justin Brunsch
