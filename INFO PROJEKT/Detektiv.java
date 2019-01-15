@@ -18,7 +18,7 @@ public class Detektiv extends Actor
         rechtsGehen();
         obenGehen();
         untenGehen();
-        
+        rotation();
     
     }    
     public void linksGehen()
@@ -37,29 +37,36 @@ public class Detektiv extends Actor
     }
      public void rechtsGehen()
     {
-     if (Greenfoot.isKeyDown("d"))
-    {
-     setLocation(getX()+1, getY());
+        if (Greenfoot.isKeyDown("d"))
+        {
+        setLocation(getX()+1, getY());
      
      
-     if (isTouching(wand.class))
-     {
+            if (isTouching(wand.class))
+            {
       
-      setLocation(getX()-1, getY());
+                setLocation(getX()-1, getY());
      
+            }
+        
+        
+     
+
+            if (Greenfoot.isKeyDown("d"))
+            {
+                setLocation(getX()+1, getY());  
+
+            }
      }
-        
-        
-     
     }
-    }
+        
     public void obenGehen()
-    {
-       if (Greenfoot.isKeyDown("w"))
-       {
-         setLocation(getX(), getY()-1);
+        {
+           if (Greenfoot.isKeyDown("w"))
+           {
+               setLocation(getX(), getY()-1);
         
-         if (isTouching(wand.class))
+               if (isTouching(wand.class))
         {
          
          setLocation(getX(), getY()+1);
@@ -82,4 +89,18 @@ public class Detektiv extends Actor
        }  
     }
    
+    public void rotation()
+    {
+            new java.util.Timer().schedule( 
+            new java.util.TimerTask() 
+            {
+                @Override
+                public void run() {
+                    turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
+                }
+            }, 
+                100 
+                );
     }
+    
+}
