@@ -9,15 +9,15 @@ import greenfoot.*;
 public class Holz extends World
 {
 
+    
     /**
      * Constructor for objects of class Holz.
      * 
      */
     public Holz()
     {    
-        super(1000, 1000, 1
-        );
-       
+        super(1000, 1000, 1);
+        
 
     
         prepare();
@@ -294,5 +294,6 @@ public class Holz extends World
         wand26.setLocation(250, 450);
         Detektiv detektiv = new Detektiv();
         addObject(detektiv, 457, 205);
+        
     }
 }

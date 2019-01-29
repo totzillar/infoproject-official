@@ -12,13 +12,21 @@ public class Detektiv extends Actor
      * Act - do whatever the Detektiv wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int delay;
+    private static final int MAX_DELAY = 2;
     public void act() 
     {
+            if (delay < MAX_DELAY) {
+            delay++;
+            return;
+        } else {
+            delay = 0;
+        }
         linksGehen();
         rechtsGehen();
         obenGehen();
         untenGehen();
-        rotation();
+        drehen();
     
     }    
     public void linksGehen()
@@ -52,19 +60,13 @@ public class Detektiv extends Actor
          
        }  
     }
-   
-    public void rotation()
-    {
-            new java.util.Timer().schedule( 
-            new java.util.TimerTask() 
-            {
-                @Override
-                public void run() {
-                    turnTowards(Greenfoot.getMouseInfo().getX(), Greenfoot.getMouseInfo().getY());
-                }
-            }, 
-                100 
-                );
-    }
     
+    public void drehen()
+    {
+            MouseInfo mouse = Greenfoot.getMouseInfo();
+            if(mouse != null) {
+                setRotation((int)(180*Math.atan2(mouse.getY()-getY(),mouse.getX()-getX())/Math.PI));
+        
+            }
     }
+}
