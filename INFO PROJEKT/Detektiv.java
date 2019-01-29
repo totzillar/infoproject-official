@@ -97,8 +97,7 @@ public class Detektiv extends Actor
        }  
     }
     
-<<<<<<< HEAD
-=======
+
     public void drehen()
     {
             MouseInfo mouse = Greenfoot.getMouseInfo();
@@ -107,5 +106,5 @@ public class Detektiv extends Actor
         
             }
     }
->>>>>>> justin-detektive
+
 }
