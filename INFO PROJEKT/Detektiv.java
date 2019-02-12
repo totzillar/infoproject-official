@@ -29,13 +29,12 @@ public class Detektiv extends Actor
         rechtsGehen();
         obenGehen();
         untenGehen();
-<<<<<<< HEAD
+
         drehen();
-=======
+
         check2();
     }
-    
->>>>>>> orlando
+
     
     
        
@@ -116,7 +115,7 @@ public class Detektiv extends Actor
           }
        }  
     }
-<<<<<<< HEAD
+
     
 
     public void drehen()
@@ -128,12 +127,12 @@ public class Detektiv extends Actor
             }
     }
 
-=======
+
     public void check2()
     {
      xDetektiv = this.getX();
      yDetektiv = this.getY();   
    
     }
->>>>>>> orlando
+
 }
