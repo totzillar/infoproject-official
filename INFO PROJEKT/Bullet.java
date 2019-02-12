@@ -24,13 +24,11 @@ public class Bullet extends Actor
           //  mon.hit(Player.getGun().damage);
         }  
      
-    public void shoot()
-    {
-        if (Greenfoot.isKeyDown("Space"))
-        {
-            getWorld().addObject(new Bullet());
-            move (10);
-        }
-    }
+   // public void shoot()
+   // {
+        //getWorld().addObject(new Bullet());
+        //    move (10);
+      //  }
+    //}
 }
 

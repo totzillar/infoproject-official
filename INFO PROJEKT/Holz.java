@@ -293,12 +293,8 @@ public class Holz extends World
         wand26.setLocation(249, 450);
         wand25.setLocation(334, 363);
         wand26.setLocation(250, 450);
-
         Detektiv detektiv = new Detektiv();
         addObject(detektiv, 457, 205);
-        
-
-        this.addObject(new Detektiv(),100,100);
         this.addObject(new Innocent(),150,150);
 
     }
