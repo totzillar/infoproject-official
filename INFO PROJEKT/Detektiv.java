@@ -8,6 +8,9 @@ import greenfoot.*;
  */
 public class Detektiv extends Actor
 {
+    public int level;
+    public int xDetektiv;
+    public int yDetektiv;
     /**
      * Act - do whatever the Detektiv wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,9 +29,21 @@ public class Detektiv extends Actor
         rechtsGehen();
         obenGehen();
         untenGehen();
+<<<<<<< HEAD
         drehen();
+=======
+        check2();
+    }
     
-    }    
+>>>>>>> orlando
+    
+    
+       
+      public Detektiv()
+    {
+        this.getImage().scale(50,50);
+        
+    }
     public void linksGehen()
     {
        if (Greenfoot.isKeyDown("a"))
@@ -41,7 +56,12 @@ public class Detektiv extends Actor
                  setLocation(getX()+1, getY());
      
          }
+        
        }  
+        if (isTouching(Zielfeld.class))
+             {
+               level = +1;
+         }
     }
      public void rechtsGehen()
     {
@@ -96,6 +116,7 @@ public class Detektiv extends Actor
           }
        }  
     }
+<<<<<<< HEAD
     
 
     public void drehen()
@@ -107,4 +128,12 @@ public class Detektiv extends Actor
             }
     }
 
+=======
+    public void check2()
+    {
+     xDetektiv = this.getX();
+     yDetektiv = this.getY();   
+   
+    }
+>>>>>>> orlando
 }

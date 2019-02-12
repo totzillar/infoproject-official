@@ -22,7 +22,8 @@ public class Holz extends World
     
         prepare();
     }
-
+  
+    
     /**
      * Bereite die Welt für den Programmstart vor. Das heißt: Erzeuge die Anfangs-
      * Objekte und füge sie der Welt hinzu.
@@ -292,8 +293,13 @@ public class Holz extends World
         wand26.setLocation(249, 450);
         wand25.setLocation(334, 363);
         wand26.setLocation(250, 450);
+<<<<<<< HEAD
         Detektiv detektiv = new Detektiv();
         addObject(detektiv, 457, 205);
         
+=======
+        this.addObject(new Detektiv(),100,100);
+        this.addObject(new Innocent(),150,150);
+>>>>>>> orlando
     }
 }
