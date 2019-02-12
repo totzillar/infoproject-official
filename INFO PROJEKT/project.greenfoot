@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.Bullet.image=ball.png
-class.Detektiv.image=detektivoben.png
+class.Detektiv.image=detektivobenNEU.png
 class.Holz.image=corkboard.jpg
 class.Innocent.image=ant3.png
 class.Zielfeld.image=bananas.png
@@ -26,10 +26,10 @@ dependency6.type=UsesDependency
 dependency7.from=Innocent
 dependency7.to=Detektiv
 dependency7.type=UsesDependency
-editor.fx.0.height=823
-editor.fx.0.width=1167
-editor.fx.0.x=552
-editor.fx.0.y=144
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=1186
 package.numDependencies=7
 package.numTargets=6
