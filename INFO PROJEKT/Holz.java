@@ -297,5 +297,10 @@ public class Holz extends World
         addObject(detektiv, 457, 205);
         this.addObject(new Innocent(),150,150);
 
+        tür tür = new tür();
+        addObject(tür,306,869);
+        tür tür2 = new tür();
+        addObject(tür2,476,535);
+        detektiv.setLocation(301,941);
     }
 }

@@ -29,16 +29,14 @@ public class Detektiv extends Actor
         rechtsGehen();
         obenGehen();
         untenGehen();
-
         drehen();
-
         check2();
     }
 
     
     
        
-      public Detektiv()
+    public Detektiv()
     {
         this.getImage().scale(50,50);
         
@@ -47,12 +45,12 @@ public class Detektiv extends Actor
     {
        if (Greenfoot.isKeyDown("a"))
        {
-         setLocation(getX()-1, getY());
+         setLocation(getX()-2, getY());
            
          if (isTouching(wand.class))
              {
                  
-                 setLocation(getX()+1, getY());
+                 setLocation(getX()+2, getY());
      
          }
         
@@ -66,24 +64,17 @@ public class Detektiv extends Actor
     {
         if (Greenfoot.isKeyDown("d"))
         {
-        setLocation(getX()+1, getY());
+        setLocation(getX()+2, getY());
      
      
             if (isTouching(wand.class))
             {
       
-                setLocation(getX()-1, getY());
+                setLocation(getX()-2, getY());
      
             }
         
         
-     
-
-            if (Greenfoot.isKeyDown("d"))
-            {
-                setLocation(getX()+1, getY());  
-
-            }
      }
     }
         
@@ -91,12 +82,12 @@ public class Detektiv extends Actor
         {
            if (Greenfoot.isKeyDown("w"))
            {
-               setLocation(getX(), getY()-1);
+               setLocation(getX(), getY()-2);
         
                if (isTouching(wand.class))
         {
          
-              setLocation(getX(), getY()+1);
+                setLocation(getX(), getY()+2);
      
          }
         }  
@@ -105,7 +96,7 @@ public class Detektiv extends Actor
     {
        if (Greenfoot.isKeyDown("s"))
        {
-         setLocation(getX(), getY()+1);
+         setLocation(getX(), getY()+2);
          
          if (isTouching(wand.class))
          {
