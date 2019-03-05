@@ -21,46 +21,44 @@ public class Detektiv extends Actor
         
     
     }    
-    public void jaGehen()
-    {
-       if (Greenfoot.isKeyDown("left"))
-       {
-         setLocation(getX()-1, getY());
-         setRotation (getRotation() -5);
-       }  
-       if (Greenfoot.isKeyDown("right"))
-       {
-         setLocation(getX()+1, getY());
-         setRotation (getRotation() +5);
-       }  
-       move(3);
-       if ("space".equals(Greenfoot.getKey()))
-        {
-         fire();
-        }    
-    }
     public void obenGehen()
     {
-       if (Greenfoot.isKeyDown("up"))
+       if (Greenfoot.isKeyDown("w"))
        {
          setLocation(getX(), getY()-1);
         
        }  
     }
+    public void linksGehen()
+    {
+       if (Greenfoot.isKeyDown("a"))
+       {
+         setLocation(getX() -1, getY());
+        
+       }  
+    }
     public void untenGehen()
     {
-       if (Greenfoot.isKeyDown("down"))
+       if (Greenfoot.isKeyDown("s"))
        {
          setLocation(getX(), getY()+1);
          
        }  
     }
-    private void fire()
+    public void rechtsGehen()
     {
-       Steel steel = new Steel();
-       getWorld().addObject(steel, getX(), getY());
-       steel.setRotation(getRotation());
-       steel.move(40.0);
-   
+       if (Greenfoot.isKeyDown("d"))
+       {
+         setLocation(getX() +1, getY());
+        
+       }  
+    }
+    public void schiessen() 
+    {
+       if (Greenfoot.isKeyDown("space"))
+       {
+         Geschoss meinGeschoss = new Geschoss();
+         this.getWorld().addObject(meinGeschoss, this.getX(), this.getY());
+       }
     }
 }
