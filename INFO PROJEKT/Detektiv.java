@@ -1,3 +1,4 @@
+
 import greenfoot.*;
 
 /**
@@ -12,6 +13,9 @@ public class Detektiv extends Actor
     public int xDetektiv;
     public int yDetektiv;
     public int rotation;
+   
+    private boolean spaceDown;
+    
     /**
      * Act - do whatever the Detektiv wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -34,20 +38,36 @@ public class Detektiv extends Actor
         drehen();
 
         check2();
-        checkFire();
+        checkFire1();
     }
     
     public void checkFire()
     {
-       if(Greenfoot.isKeyDown("space")) {
+       if(Greenfoot.isKeyDown("space") )
+       //&& dorsch ==0 );
+       {
            
            getWorld().addObject(new Bullet(), getX(), getY());
-           int rotation = getRotation();
-           System.out.println(rotation);
+           Greenfoot.delay(100);
+           //dorsch=0;
+           //int rotation = getRotation();
+           //System.out.println(rotation);
       }
         }
+    public void checkFire1()
+    {
+        if (!spaceDown && Greenfoot.isKeyDown("space"))
+        {
+                spaceDown = true;
+                getWorld().addObject(new Bullet(), getX(), getY());
+        }
+        if (spaceDown && !Greenfoot.isKeyDown("space"))
+        {
+        spaceDown = false;
+        
+        }
     
-       
+    }   
      public Detektiv()
     {
         this.getImage().scale(50,50);

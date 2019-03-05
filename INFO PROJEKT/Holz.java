@@ -296,7 +296,6 @@ public class Holz extends World
 
         Detektiv detektiv = new Detektiv();
         addObject(detektiv, 457, 205);
-        
 
         this.addObject(new Detektiv(),100,100);
         this.addObject(new Innocent(),150,150);
