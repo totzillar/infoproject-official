@@ -25,7 +25,8 @@
         }
         public void drehenBullet()
         {
-                 MouseInfo mouse = Greenfoot.getMouseInfo();
+            //dreht die Bullet auf den Mauszeiger     
+            MouseInfo mouse = Greenfoot.getMouseInfo();
                 //for (int i = 0; i < 1; i++){ 
                 if(mouse != null && Greenfoot.isKeyDown("space"))//methode wand adden und leertaste gedrückt) 
                 {
@@ -39,7 +40,7 @@
      
     public void checkBoundaries()
    {
-       
+       // diese Methode checkt die Grenzen der Welt
        if(getX() > getWorld().getWidth() - 1) 
             getWorld().removeObject(this);
        else if(getX() < 1) 
@@ -51,12 +52,14 @@
    }
    public void destroyEnemies()
    {
-       //"Enemy" can be any class that you want the bullet to destroy. 
+       // Diese Methode löscht die Gegner durch die Bullet, sowie das der Schuß
+       
        Actor Innocent = getOneIntersectingObject(Innocent.class);
        if(Innocent != null) {
             getWorld().removeObject(Innocent);
             getWorld().removeObject(this);
        }
+       // nicht durch die Wand geht
        Actor wand = getOneIntersectingObject(wand.class);
        if(wand != null) {
             
@@ -64,6 +67,6 @@
        }
        
    }
-   
+   //Geschwindigkeit des Schusses
    private int speed = 10;
 }

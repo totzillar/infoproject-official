@@ -1,6 +1,6 @@
 #Greenfoot project file
 class.Bullet.image=beeper.png
-class.Detektiv.image=detektivoben.png
+class.Detektiv.image=detektivobenNEU.png
 class.Holz.image=maphintergrund.png
 class.Innocent.image=ant3.png
 class.Zielfeld.image=matteo.png
@@ -53,7 +53,7 @@ readme.name=@README
 readme.width=47
 readme.x=10
 readme.y=10
-simulation.speed=68
+simulation.speed=48
 target1.height=50
 target1.name=Bullet
 target1.showInterface=false

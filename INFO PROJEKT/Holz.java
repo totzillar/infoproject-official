@@ -17,8 +17,9 @@ public class Holz extends World
      */
     public Holz()
     {    
+        //Weltgröße 
         super(1000, 1000, 1);
-        
+        //Die Hintergrund Musik welche in wunderschönen Loop gespielt wird
         backgroundMusic.playLoop();
     
         prepare();
@@ -31,6 +32,7 @@ public class Holz extends World
      */
     private void prepare()
     {
+        //Die Objekte welche gespawnt werden
         wand wand = new wand();
         addObject(wand, 18, 40);
         wand.setLocation(10, 47);
@@ -313,5 +315,7 @@ public class Holz extends World
         Innocent innocent4 = new Innocent();
         addObject(innocent4,160,638);
         innocent4.setLocation(153,719);
+        detektiv.setLocation(284,886);
+       
     }
 }

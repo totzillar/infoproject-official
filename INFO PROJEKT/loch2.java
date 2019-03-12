@@ -24,8 +24,9 @@ public class loch2 extends Actor
      public loch2()
     {
         this.getImage().scale(2000,2000);
-        
+        //Skalierung
     }
+    //Steuerung des Lochs bzw. FOG of WAR
     public void linksGehen()
     {
        if (Greenfoot.isKeyDown("a"))

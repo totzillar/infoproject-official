@@ -22,6 +22,7 @@ public class Innocent extends Actor
     }  
     public void randomMovement()
     {
+        //MEthode für das Zufällige Bewegen des Gegners
         {
         move(1);
         if (Greenfoot.getRandomNumber(100) < 10)
@@ -41,6 +42,7 @@ public class Innocent extends Actor
           
         }
     }
+    //checkt ob eine Wand in der nähe ist
     if (isTouching(wand.class))
                  {
                  

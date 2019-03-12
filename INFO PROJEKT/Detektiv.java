@@ -126,7 +126,7 @@ public class Detektiv extends Actor
                if (isTouching(wand.class))
         {
          
-         setLocation(getX(), getY()+1);
+            setLocation(getX(), getY()+1);
      
        }
         }  
