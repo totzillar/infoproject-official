@@ -22,6 +22,7 @@ public class Innocent extends Actor
     }  
     public void randomMovement()
     {
+        //Bewegt den Innocent zufällig.
         {
         move(1);
         if (Greenfoot.getRandomNumber(100) < 10)
@@ -52,6 +53,7 @@ public class Innocent extends Actor
            }
     public void check()
         {
+            //Checkt die Position des Innocents.
           Actor a = getOneIntersectingObject(Detektiv.class);
           if (a !=null)
           {
