@@ -14,6 +14,18 @@ public class Zielfeld extends Actor
      */
     public void act() 
     {
-        // Ergänzen Sie Ihren Quelltext hier...
+        ziel();
     }    
+    
+    public Zielfeld()
+    {
+      this.getImage().scale(30,30);   
+    }
+    public void ziel()
+    {
+        if (isTouching(Detektiv.class))
+        {
+            Greenfoot.stop();
+        }
+    }
 }

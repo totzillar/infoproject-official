@@ -302,5 +302,7 @@ public class Holz extends World
         tür tür2 = new tür();
         addObject(tür2,476,535);
         detektiv.setLocation(301,941);
+        Zielfeld zielfeld = new Zielfeld();
+        addObject(zielfeld,856,445);
     }
 }
