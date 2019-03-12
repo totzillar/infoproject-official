@@ -126,4 +126,11 @@ public class Detektiv extends Actor
    
     }
 
+    public void hinweisSammeln()
+    {
+        if (isTouching(hinweis.class))
+        {
+            
+        }
+    }
 }

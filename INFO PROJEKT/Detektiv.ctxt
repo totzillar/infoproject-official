@@ -17,4 +17,6 @@ comment7.params=
 comment7.target=void\ drehen()
 comment8.params=
 comment8.target=void\ check2()
-numComments=9
+comment9.params=
+comment9.target=void\ hinweisSammeln()
+numComments=10

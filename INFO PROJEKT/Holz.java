@@ -304,5 +304,9 @@ public class Holz extends World
         detektiv.setLocation(301,941);
         Zielfeld zielfeld = new Zielfeld();
         addObject(zielfeld,856,445);
+        hinweis hinweis = new hinweis();
+        addObject(hinweis,297,405);
+        hinweis hinweis2 = new hinweis();
+        addObject(hinweis2,896,741);
     }
 }
