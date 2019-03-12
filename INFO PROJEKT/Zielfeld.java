@@ -16,4 +16,9 @@ public class Zielfeld extends Actor
     {
         // Ergänzen Sie Ihren Quelltext hier...
     }    
+      public Zielfeld()
+    {
+        this.getImage().scale(50,50);
+        
+    }
 }

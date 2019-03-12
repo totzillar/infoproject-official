@@ -18,9 +18,15 @@ public class loch2 extends Actor
         untenGehen();
         obenGehen();
         rechtsGehen();
-        linksGehen();// Ergänzen Sie Ihren Quelltext hier...
+        linksGehen();
+        // Ergänzen Sie Ihren Quelltext hier...
     }
-       public void linksGehen()
+     public loch2()
+    {
+        this.getImage().scale(2000,2000);
+        
+    }
+    public void linksGehen()
     {
        if (Greenfoot.isKeyDown("a"))
        {

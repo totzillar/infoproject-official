@@ -8,7 +8,8 @@ import greenfoot.*;
  */
 public class Holz extends World
 {
-
+    GreenfootSound backgroundMusic = new GreenfootSound("titel.mp3");
+    
     
     /**
      * Constructor for objects of class Holz.
@@ -18,7 +19,7 @@ public class Holz extends World
     {    
         super(1000, 1000, 1);
         
-
+        backgroundMusic.playLoop();
     
         prepare();
     }
@@ -294,11 +295,23 @@ public class Holz extends World
         wand25.setLocation(334, 363);
         wand26.setLocation(250, 450);
 
+        Zielfeld zielfeld = new Zielfeld();
+        addObject(zielfeld,807,441);
+        zielfeld.setLocation(917,772);
+        zielfeld.setLocation(909,811);
+        zielfeld.setLocation(922,850);
+        zielfeld.setLocation(914,836);
+
         Detektiv detektiv = new Detektiv();
-        addObject(detektiv, 457, 205);
-
-        this.addObject(new Detektiv(),100,100);
-        this.addObject(new Innocent(),150,150);
-
+        addObject(detektiv,299,904);
+        Innocent innocent = new Innocent();
+        addObject(innocent,306,420);
+        Innocent innocent2 = new Innocent();
+        addObject(innocent2,897,499);
+        Innocent innocent3 = new Innocent();
+        addObject(innocent3,554,824);
+        Innocent innocent4 = new Innocent();
+        addObject(innocent4,160,638);
+        innocent4.setLocation(153,719);
     }
 }
