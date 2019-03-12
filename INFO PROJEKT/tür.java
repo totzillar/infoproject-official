@@ -19,6 +19,7 @@ public class tür extends Actor
     
     public void berühren()
         {
+            //Lässt die Tür "öffnen" wenn sich der Detektiv nähert und schließt sich wieder wenn der Detektiv sich entfernt.
           GreenfootImage bild;  
             
           Actor a = getOneIntersectingObject(Detektiv.class);

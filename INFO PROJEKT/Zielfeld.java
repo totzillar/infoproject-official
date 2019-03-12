@@ -19,10 +19,12 @@ public class Zielfeld extends Actor
     
     public Zielfeld()
     {
+        //Skaliert das Zielfeldbild.
       this.getImage().scale(30,30);   
     }
     public void ziel()
     {
+        //Beendet das Spiel und sagt dass man gewonnen hat.
         if (isTouching(Detektiv.class))
         {
             this.getWorld().showText("Du hast gewonnen", 100, 100);

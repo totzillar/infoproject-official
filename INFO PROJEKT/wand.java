@@ -18,6 +18,7 @@ public class wand extends Actor
     }    
     public boolean onGround()
     {
+        //Kreiert eine Hitbox für die Wand.
         Actor above = getOneObjectAtOffset (0, 30, wand.class);
         return above != null;
         
