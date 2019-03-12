@@ -38,11 +38,13 @@ public class Detektiv extends Actor
        
     public Detektiv()
     {
+        //Skaliert den Detektiv.
         this.getImage().scale(50,50);
         
     }
     public void linksGehen()
     {
+        //Läuft links.
        if (Greenfoot.isKeyDown("a"))
        {
          setLocation(getX()-2, getY());
@@ -62,6 +64,7 @@ public class Detektiv extends Actor
     }
      public void rechtsGehen()
     {
+        //läuft rechts.
         if (Greenfoot.isKeyDown("d"))
         {
         setLocation(getX()+2, getY());
@@ -80,6 +83,7 @@ public class Detektiv extends Actor
         
     public void obenGehen()
         {
+            //läuft nach oben.
            if (Greenfoot.isKeyDown("w"))
            {
                setLocation(getX(), getY()-2);
@@ -94,6 +98,7 @@ public class Detektiv extends Actor
     }
     public void untenGehen()
     {
+        //läuft nach unten.
        if (Greenfoot.isKeyDown("s"))
        {
          setLocation(getX(), getY()+2);
@@ -111,6 +116,7 @@ public class Detektiv extends Actor
 
     public void drehen()
     {
+            //Rotiert den Detektiv zum Mauszeiger.
             MouseInfo mouse = Greenfoot.getMouseInfo();
             if(mouse != null) {
                 setRotation((int)(180*Math.atan2(mouse.getY()-getY(),mouse.getX()-getX())/Math.PI));
@@ -121,6 +127,7 @@ public class Detektiv extends Actor
 
     public void check2()
     {
+        //Checkt die Position des Detektivs.
      xDetektiv = this.getX();
      yDetektiv = this.getY();   
    
@@ -128,6 +135,7 @@ public class Detektiv extends Actor
 
     public void hinweisSammeln()
     {
+        //Sammelt Hinweise in der Theorie auf.
         Actor hinweis = getOneObjectAtOffset(0, 0, hinweis.class);
         if(isTouching(hinweis.class))
         {
