@@ -25,6 +25,7 @@ public class Zielfeld extends Actor
     {
         if (isTouching(Detektiv.class))
         {
+            this.getWorld().showText("Du hast gewonnen", 100, 100);
             Greenfoot.stop();
         }
     }
