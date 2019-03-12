@@ -56,6 +56,7 @@ public class Detektiv extends Actor
         }
     public void checkFire1()
     {
+        //spawnt Bullet bei Leertasten druck
         if (!spaceDown && Greenfoot.isKeyDown("space"))
         {
                 spaceDown = true;
@@ -73,6 +74,7 @@ public class Detektiv extends Actor
         this.getImage().scale(50,50);
         
     }
+    
     public void linksGehen()
     {
        if (Greenfoot.isKeyDown("a"))
