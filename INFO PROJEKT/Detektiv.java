@@ -128,9 +128,10 @@ public class Detektiv extends Actor
 
     public void hinweisSammeln()
     {
-        if (isTouching(hinweis.class))
+        Actor hinweis = getOneObjectAtOffset(0, 0, hinweis.class);
+        if(isTouching(hinweis.class))
         {
-            
+            getWorld().removeObject(hinweis);
         }
     }
 }
